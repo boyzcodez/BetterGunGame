@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://ccnen0qwb17qk"]
+
+[ext_resource type="PackedScene" uid="uid://bmxj04l1jivtq" path="res://Entity/Player/Robot/robot.tscn" id="1_lb02g"]
+[ext_resource type="PackedScene" uid="uid://vt1nnv6jvxr0" path="res://Game/Map/room.tscn" id="2_b6lgq"]
+
+[node name="Game" type="Node2D"]
+
+[node name="MapHandler" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="Room" parent="MapHandler" instance=ExtResource("2_b6lgq")]
+
+[node name="EntityHandler" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="Spawner" type="Node2D" parent="EntityHandler"]
+
+[node name="Robot" parent="EntityHandler" instance=ExtResource("1_lb02g")]

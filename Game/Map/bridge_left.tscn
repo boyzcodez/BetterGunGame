@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3owvcjbwvhj"]
+
+[ext_resource type="Material" uid="uid://dfchukatmvkv2" path="res://Game/Shaders/smooth_pixels.tres" id="1_4lm6x"]
+[ext_resource type="Texture2D" uid="uid://d1gre7g2f63wr" path="res://Assets/Maps/basic_map_bridges.png" id="1_kpuxl"]
+
+[node name="BridgeLeft" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 2
+material = ExtResource("1_4lm6x")
+position = Vector2(0, 1)
+texture = ExtResource("1_kpuxl")
+hframes = 2

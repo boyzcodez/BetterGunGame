@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxgknp7othpuw"]
+
+[ext_resource type="Material" uid="uid://dfchukatmvkv2" path="res://Game/Shaders/smooth_pixels.tres" id="1_17wwt"]
+[ext_resource type="Texture2D" uid="uid://d1gre7g2f63wr" path="res://Assets/Maps/basic_map_bridges.png" id="2_q8e4h"]
+
+[node name="BridgeUp" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 2
+material = ExtResource("1_17wwt")
+position = Vector2(0, 1)
+texture = ExtResource("2_q8e4h")
+hframes = 2
+frame = 1
